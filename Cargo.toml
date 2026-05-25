@@ -17,7 +17,3 @@ crate-type = ["cdylib"]
 [dependencies]
 pyo3 = { version = "0.28.3", features = ["extension-module"] }
 ni-number = { version = "0.2.1" }
-
-[features]
-default = []
-rug = ["ni-number/rug"]
