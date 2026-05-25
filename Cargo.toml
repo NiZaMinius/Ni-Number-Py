@@ -1,6 +1,6 @@
 [package]
 name = "ni-number-py"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "Python bindings for ni-number — high-precision computation of the Ni constant (η_ν)"
 license = "MIT"
