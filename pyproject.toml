@@ -1,0 +1,21 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "ni-number-py"
+version = "0.1.0"
+requires-python = ">=3.8"
+description = "Python bindings for ni-number — high-precision Ni constant"
+license = {text = "MIT"}
+keywords = ["mathematics", "constant", "physics", "quantum"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+[project.urls]
+Homepage = "https://github.com/NiZaMinius/Ni-Number-Py"
+Repository = "https://github.com/NiZaMinius/Ni-Number-Py"

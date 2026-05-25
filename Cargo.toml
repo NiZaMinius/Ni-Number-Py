@@ -1,0 +1,23 @@
+[package]
+name = "ni-number-py"
+version = "0.1.0"
+edition = "2024"
+description = "Python bindings for ni-number — high-precision computation of the Ni constant (η_ν)"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/NiZaMinius/Ni-Number-Py"
+repository = "https://github.com/NiZaMinius/Ni-Number-Py"
+keywords = ["mathematics", "constant", "physics", "quantum", "arbitrary-precision"]
+categories = ["mathematics", "science"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "ni_number_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.28.3", features = ["extension-module"] }
+ni-number = { version = "0.2.1" }
+
+[features]
+default = []
+rug = ["ni-number/rug"]
